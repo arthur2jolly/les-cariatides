@@ -4,7 +4,7 @@ require_once '../../vendor/autoload.php';
 \Slim\Slim::registerAutoloader();
 Twig_Autoloader::register();
 
-$app = new \Slim\Slim();
+$app = new \Slim\Slim(array('debug' => true));
 
 $app->get('/', function() use ($app)  {
      renderPage('index.html', $app);
@@ -19,7 +19,7 @@ $app->get('/decouvrir', function() use ($app) {
 })->name('decouvrir')->setParams(array('label' => "À Découvrir"));
 
 $app->get('/tarifs', function() use ($app) {
-    renderPage('decouvrir.html', $app);
+    renderPage('tarifs.html', $app);
 })->name('tarifs')->setParams(array('label' => "Réservations - tarifs"));
 
 $app->get('/liens', function() use ($app) {

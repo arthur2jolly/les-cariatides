@@ -1,0 +1,228 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div>
+        <h1><img src="design/tete.jpg" width="710" height="131" alt="Les Cariatides"/></h1>
+
+        <div id="conteneur">
+            <div id="visuel" style="height:174px;">
+                <object id="myId" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="684" height="174">
+                    <param name="movie" value="diapo_int.swf"/>
+                    <!--[if !IE]>-->
+                    <object type="application/x-shockwave-flash" data="diapo_int.swf" width="684" height="174">
+                        <!--<![endif]-->
+                        <div>
+                            <img src="IMGS/visuel_int.jpg" width="684" height="174" alt="Diaporama"/>
+                        </div>
+                        <!--[if !IE]>-->
+                    </object>
+                    <!--<![endif]-->
+                </object>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li id="btn0"><a href="index.html">
+                            <div class="btnMenu">Accueil</div>
+                        </a></li>
+                    <li id="btn1"><a href="visite.html">
+                            <div class="btnMenu btnSelected">Visite Guidée</div>
+                        </a></li>
+                    <li id="btn2"><a href="decouvrir.html">
+                            <div class="btnMenu">À Découvrir</div>
+                        </a></li>
+                    <li id="btn3"><a href="tarifs.html">
+                            <div class="btnMenu">Réservations - tarifs</div>
+                        </a></li>
+                    <!--li id="btn4"><a href="infos.html"><div class="btnMenu">Infos Pratiques</div></a></li-->
+                    <li id="btn5"><a href="liens.html">
+                            <div class="btnMenu">Liens Utiles</div>
+                        </a></li>
+                    <li id="btn6"><a href="contact.html">
+                            <div class="btnMenu">Contact</div>
+                        </a></li>
+                    <li id="btn7"><a href="http://www.les-cariatides.de">
+                            <div class="btnMenu">Deutsch Version<br/>der Website</div>
+                        </a></li>
+                </ul>
+            </div>
+
+            <div id="central">
+                <div style="margin-left:34px; margin-right:34px">
+                    <h2 id="tt_visite">Les Cariatides, l’invitation au Voyage</h2>
+
+                    <div id="wifi">Accès WIFI</div>
+                    <div class="sep"></sep>
+                        <div id="contenu_visite">
+                            <p class="chapo">Les maîtres mots des Cariatides : <br/>
+                                Confort, simplicité, et modernité en toute liberté</p>
+
+                            <p style="margin-bottom:15px;"><strong>Des maisons de plain-pied entièrement meublées et
+                                    équipées :</strong></p>
+
+                            <p style="margin-bottom:20px;">+ d’une kitchenette comprenant un évier, un réfrigérateur,
+                                <br/>
+                                une plaque de gaz et un micro-onde,<br/>
+                                + une salle d'eau avec douche, lavabo, et toilettes,<br/>
+                                + chauffage, salon de jardin et barbecue.</p>
+
+                            <p>Le plus !<br/>
+                                Un accès WiFi entièrement gratuit !</p>
+
+                            <p>&nbsp;</p>
+                        </div>
+                        <div id="periode">
+                            <h3>BON À SAVOIR</h3>
+
+                            <p style="text-indent:-5000px"><strong>Du 9 février au 28 juin 2009 et du 30 août au 11
+                                    novembre 2009</strong>, le tennis et le mini-golf sont inclus dans le prix et le
+                                chauffage si nécessaire.</p>
+                        </div>
+                    </div>
+                    <p>&nbsp;</p>
+                </div>
+            </div>
+        </div>
+        <div id="hebergement">
+            <div class="logement">
+                <div class="textes">
+                    <h3>Le Studio 2 personnes (17 m<sup>²</sup>)</h3>
+
+                    <div class="presentation"></div>
+                    <div class="description">
+                        <div class="content">
+                            <h2>Équipement</h2>
+                            <ul>
+                                <li>ESPACE NUIT AVEC UN LIT DE 140 CM DANS LE SÉJOUR</li>
+                                <li>KITCHENETTE (SANS MICRO-ONDES)</li>
+                                <li>SALLE D'EAU AVEC WC.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="photos" id="gallery">
+                    <a href="IMGS/studio_2_large_001.jpg" title=""><img src="IMGS/studio_2_large_001.jpg" width="294"
+                                                                        height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/studio_2_large_002.jpg" title=""><img src="IMGS/studio_2_large_002.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/studio_2_large_003.jpg" title=""><img src="IMGS/studio_2_large_003.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                </div>
+            </div>
+            <div class="sep"></div>
+            <div class="logement">
+                <div class="textes">
+                    <h3>L’appartement 2 personnes (2 pièces)</h3>
+
+                    <div class="presentation"></div>
+                    <div class="description">
+                        <div class="content">
+                            <h2>Équipement</h2>
+                            <ul>
+                                <li>UNE CHAMBRE AVEC UN LIT DE 140 CM</li>
+                                <li>UN SEJOUR AVEC CANAPÉ ET CUISINE AMERICAINE TOUTE EQUIPÉE</li>
+                                <li>SALLE D'EAU AVEC WC.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="photos" id="gallery2">
+                    <a href="IMGS/appart_2_large_001.jpg" title=""><img src="IMGS/appart_2_large_001.jpg" width="294"
+                                                                        height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_2_large_002.jpg" title=""><img src="IMGS/appart_2_large_002.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_2_large_003.jpg" title=""><img src="IMGS/appart_2_large_003.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+
+                </div>
+            </div>
+            <div class="sep"></div>
+            <div class="logement">
+                <div class="textes">
+                    <h3>L’appartement 4 personnes (3 pièces)</h3>
+
+                    <div class="presentation"></div>
+                    <div class="description">
+                        <div class="content">
+                            <h2>Équipement</h2>
+                            <ul>
+                                <li>UNE CHAMBRE AVEC UN LIT DE 140 CM</li>
+                                <li>UNE CHAMBRE AVEC 2 LITS SIMPLES</li>
+                                <li>UN SÉJOUR AVEC CANAPÉ ET CUISINE AMÉRICAINE</li>
+                                <li>SALLE D'EAU ET WC SÉPARÉ.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="photos" id="gallery4">
+                    <a href="IMGS/appart_4_large_001.jpg" title=""><img src="IMGS/appart_4_001.jpg" width="294"
+                                                                        height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_4_large_002.jpg" title=""><img src="IMGS/appart_4_002.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_4_large_003.jpg" title=""><img src="IMGS/appart_4_003.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_4_large_004.jpg" title=""><img src="IMGS/appart_4_004.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_4_large_005.jpg" title=""><img src="IMGS/appart_4_005.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_4_large_006.jpg" title=""><img src="IMGS/appart_4_006.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_4_large_007.jpg" title=""><img src="IMGS/appart_4_007.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_4_large_008.jpg" title=""><img src="IMGS/appart_4_008.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_4_large_009.jpg" title=""><img src="IMGS/appart_4_009.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_4_large_010.jpg" title=""><img src="IMGS/appart_4_010.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_4_large_011.jpg" title=""><img src="IMGS/appart_4_011.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_4_large_012.jpg" title=""><img src="IMGS/appart_4_012.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                </div>
+            </div>
+            <div class="sep"></div>
+            <div class="logement">
+                <div class="textes">
+                    <h3>L’appartement 5 personnes (3 pièces)</h3>
+
+                    <div class="presentation"></div>
+                    <div class="description">
+                        <div class="content">
+                            <h2>Équipement</h2>
+                            <ul>
+                                <li>UNE CHAMBRE AVEC UN LIT DE 140 CM</li>
+                                <li>UNE CHAMBRE AVEC 3 LITS SIMPLES</li>
+                                <li>UN SÉJOUR AVEC CANAPÉ ET CUISINE AMÉRICAINE</li>
+                                <li>SALLE D'EAU AVEC WC.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="photos" id="gallery5">
+                    <a href="IMGS/appart_5_large_001.jpg" title=""><img src="IMGS/appart_5_001.jpg" width="294"
+                                                                        height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_5_large_002.jpg" title=""><img src="IMGS/appart_5_002.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_5_large_003.jpg" title=""><img src="IMGS/appart_5_003.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_5_large_004.jpg" title=""><img src="IMGS/appart_5_004.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_5_large_005.jpg" title=""><img src="IMGS/appart_5_005.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                    <a class="hideMe" href="IMGS/appart_5_large_006.jpg" title=""><img src="IMGS/appart_5_006.jpg"
+                                                                                       width="294" height="233" alt=""/></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>+ <a href="index.html">ACCUEIL</a> -
+            <a href="visite.html">VISITE GUIDÉE</a> -
+            <a href="decouvrir.html">À DÉCOUVRIR</a> -
+            <a href="tarifs.html">RÉSERVATION - TARIFS</a> -
+            <a href="liens.html">LIENS UTILES</a> -
+            <a href="contact.html">CONTACT</a> -
+            <a href="http://www.les-cariatides.de">Deutsch Version</a> +</p>
+    </div>
+{% endblock %}

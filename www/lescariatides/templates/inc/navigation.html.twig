@@ -1,0 +1,10 @@
+{% spaceless %}
+<div id="menu">
+    <ul>
+        {% for route in routes %}
+            <li id="btn{{ loop.index }}"><a href="{{ route.pattern }}"><div class="btnMenu">{{ route.param('label') }}</div></a></li>
+        {% endfor %}
+        <li id="btn{{ loop.index + 1 }}"><a href="http://www.les-cariatides.de"><div class="btnMenu">Deutsch Version<br />der Website</div></a></li>
+    </ul>
+</div>
+{% endspaceless %}

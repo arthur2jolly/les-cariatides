@@ -1,7 +1,9 @@
 <div id="footer">
+    {% spaceless %}
     <p>+
         {% for route in routes %}
             <a href="{{ route.pattern }}">{{ route.param('label')|upper }}</a> -
         {% endfor %}
         <a href="http://www.les-cariatides.de">Deutsch Version</a> +</p>
+    {% endspaceless %}
 </div>

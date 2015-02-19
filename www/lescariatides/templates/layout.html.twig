@@ -15,76 +15,18 @@
 </head>
 
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/fr_FR/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+{% include 'inc/google_analytics.html.twig' %}
+{% include 'inc/facebook.html.twig' %}
     <div id="ondes">
-    <div id="principal">
-        <h1><img src="design/tete.jpg" width="710" height="131" alt="Les Cariatides" /></h1>
-        <div id="conteneur">
-            <div id="visuel" style="height:324px;">
-              <div>
-              </div>
-            </div>
-                <script type="text/javascript">
-                var file, i;
-                    for(i=1 ; i <= 39 ; i++) {
-                      if(i < 10) {
-                        file = '0'+i;
-                      } else {
-                        file = i;
-                      }
-                      $('#visuel > div').append('<img src="IMGS/home/'+file+'.jpg" height="324" alt="" />');
-                    }
-                  $('#visuel > div').cycle();
-                </script>
-                <div id="menu">
-                    <ul>
-                        <li id="btn0"><a href="index.html" ><div class="btnMenu btnSelected">Accueil</div></a></li>
-                        <li id="btn1"><a href="visite.html" ><div class="btnMenu">Visite Guidée</div></a></li>
-                        <li id="btn2"><a href="decouvrir.html"><div class="btnMenu">À Découvrir</div></a></li>
-                        <li id="btn3"><a href="tarifs.html"><div class="btnMenu">Réservations - tarifs</div></a></li>
-                        <!--li id="btn4"><a href="infos.html"><div class="btnMenu">Infos Pratiques</div></a></li-->
-                        <li id="btn5"><a href="liens.html"><div class="btnMenu">Liens Utiles</div></a></li>
-                        <li id="btn6"><a href="contact.html"><div class="btnMenu">Contact</div></a></li>
-            <li id="btn7"><a href="http://www.les-cariatides.de"><div class="btnMenu">Deutsch Version<br />der Website</div></a></li>
-                    </ul>
-                </div>
-                
-            <hr style="background=#e0f2f4" />
-            
-            <div id="central">
+        <div id="principal">
+            <h1><img src="design/tete.jpg" width="710" height="131" alt="Les Cariatides" /></h1>
+            <div id="conteneur">
+                <div id="visuel">{% block visual %}{% endblock %}</div>
+                {% include 'inc/navigation.html.twig' %}
                 {% block content %}{% endblock %}
             </div>
-            <div class="sep"></div>
-            <div id="footer">
-                <p>+ <a href="index.html">ACCUEIL</a> -
-                    <a href="visite.html">VISITE GUIDÉE</a> -
-                    <a href="decouvrir.html">À DÉCOUVRIR</a> -
-                    <a href="tarifs.html">RÉSERVATION - TARIFS</a> -
-                    <a href="liens.html">LIENS UTILES</a> -
-                    <a href="contact.html">CONTACT</a> -
-                    <a href="http://www.les-cariatides.de">Deutsch Version</a> +</p>
-            </div>
+            {% include 'inc/footer.html.twig' %}
         </div>
     </div>
-    </div>
-     <p>&nbsp;</p>
-     <script type="text/javascript">
-        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-     </script>
-     <script type="text/javascript">
-        try
-        {
-            var pageTracker = _gat._getTracker("UA-12543076-1");
-            pageTracker._trackPageview();
-        } catch(err) {}
-    </script>
 </body>
 </html>

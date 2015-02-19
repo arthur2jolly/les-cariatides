@@ -1,0 +1,49 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}A découvrir{% endblock %}
+
+
+{% block visual %}
+    <ul class="diaporama1">
+        <li><img src="IMGS/home/10.jpg" alt="" /></li>
+        <li><img src="IMGS/home/11.jpg" alt="" /></li>
+        <li><img src="IMGS/home/12.jpg" alt="" /></li>
+        <li><img src="IMGS/home/13.jpg" alt="" /></li>
+        <li><img src="IMGS/home/14.jpg" alt="" /></li>
+        <li><img src="IMGS/home/15.jpg" alt="" /></li>
+    </ul>
+{% endblock %}
+
+{% block content %}
+    <div id="central">
+        <div style="margin-left:34px; margin-right:34px">
+            <h2 id="tt_contact">Contactez-nous</h2>
+            <div id="contenu_contact">
+                <div class="textes">
+                    <h3>Laissez nous votre message</h3>
+                    <form name="form" id="form" action="#" method="post">
+                        <label>+ Votre nom</label><br />
+                        <input type="text" name="name" size="20"/><br />
+                        <label>+ Votre email</label><br />
+                        <input type="text" name="email" size="20"/><br />
+                        <label>+ Votre nom</label><br />
+                        <textarea name="message" rows="5" cols="40" ></textarea>
+                    </form>
+                    <div style="text-decoration:none;text-align:right; margin-right:50px;"><a href="javascript:document.form.submit();">>>> Envoyer</a></div>
+                </div>
+                <div class="textes separation">
+                    <h3>Coordonnées directes</h3>
+                    <p>
+                        <strong>Frédérique et Antoine Néri</strong><br />
+                        Route Touristique<br />
+                        La Biroire<br />
+                        17310 St Pierre d'Oléron<br />
+                        <br />
+                        Tél. : 05 46 47 21 41
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="sep"></div>
+    </div>
+{% endblock %}

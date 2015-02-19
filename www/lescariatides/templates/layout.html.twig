@@ -7,9 +7,9 @@
   <title>{% block title %}{% endblock %} - résidence LES CARIATIDES - www.les-cariatides.com</title>
   {% spaceless %}{{ metas|raw }}{% endspaceless %}
   
-  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/_style.css" rel="stylesheet" type="text/css" />
 
-  <script type="text/javascript" src="/assets/js/jquery-1.3.2.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
   <script type="text/javascript" src="/assets/js/cycle.js"></script>
   
 </head>
@@ -19,14 +19,18 @@
 {% include 'inc/facebook.html.twig' %}
     <div id="ondes">
         <div id="principal">
-            <h1><img src="design/tete.jpg" width="710" height="131" alt="Les Cariatides" /></h1>
+            <h1><img src="/assets/img/tete.jpg" width="710" height="131" alt="Les Cariatides" /></h1>
             <div id="conteneur">
                 <div id="visuel">{% block visual %}{% endblock %}</div>
                 {% include 'inc/navigation.html.twig' %}
                 {% block content %}{% endblock %}
             </div>
+            <div class="sep"></div>
+            {% block extracontent %}{% endblock %}
+            <div class="sep"></div>
             {% include 'inc/footer.html.twig' %}
         </div>
     </div>
+    {% block bottomJavascript %}{% endblock %}
 </body>
 </html>

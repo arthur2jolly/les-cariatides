@@ -1,58 +1,82 @@
 {% extends 'layout.html.twig' %}
 
-{% block content %}
+{% block visual %}<div></div>{% endblock %}
 
-<div id="gauche">
-                    <h2 id="infosPratiques">Infos Pratiques</h2>
-                        <p>
-                            <strong>Pour venir aux Cariatides</strong><br />
-                            + En voiture<br />
-                            + Depuis le nord<br />
-                            + Depuis le sud<br />
-                            + En train : TGV réservation
-                        </p>
-                    <div class="sepGauche"></div>
-                    <h2 id="coordonnees">Coordonnées</h2>
-                    <p>
-                        <strong>Frédérique et Antoine Neri</strong><br />
-                        Route Touristique<br />
-                        La Biroire<br />
-                        17310 St Pierre d'Oléron<br />
-                        <br />
-                        <strong>Tél. : 05 46 47 21 41</strong>
-                        <br />
-                        <br />
-                    </p>
-                    <p><div class="fb-like" data-href="http://www.les-cariatides.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div></p>
-                </div>
-                <div id="contenu">
-                    <h2 id="bienvenue">Bienvenue sur notre site web</h2>
-                    <p class="chapo">L’hébergement dans un autre esprit</p>
-                  <p>Résidence de charme avec accès direct à la mer, sans même avoir à traverser de route, les Cariatides, creusées dans la dune, vous offrent un espace entièrement dédié au bien-être et à la nature. Chez nous, point de béton ! Seulement des arbres, des herbes et des fleurs…</p>
-                  <p>&nbsp;</p>
-                  <p>Les hébergements s'organisent autour des lieux de vie : le parc de 2 hectares parfaitement entretenu, la piscine de 12m par 6m, le mini-golf, le court de tennis, la barbecue et le jardin pour chaque maison.</p>
-                  <p>&nbsp;</p>
-                  <p>Depuis l’origine, nous nous sommes attachés à privilégier la qualité de l'accueil et à afficher les valeurs qui nous tiennent à coeur : respect, écoute, disponibilité, honnêteté et discrétion.</p>
-                  <p>&nbsp;</p>
-                  <p>Nous vous proposons une nouvelle approche de l’hébergement et du tourisme : hors des standards, nous mettons un point d’honneur à vous offrir un accueil stylé, chaleureux, simple, précis sans prétention ni ostentation.</p>
-                  <p>&nbsp;</p>
-                  <p>Le plus !<br />
-                  Un accès WiFi entièrement gratuit !</p>
-                  <p>&nbsp;</p>
-                  <p>Alors, venez-vous ressourcer dans ce havre de paix et de tranquillité au sein de l'île d'Oléron !<a href="visite.html"></a></p>
-      <a href="visite.html"><div class="enSavoirPlus">Visitez nos logements</div></a></p>
-                </div>
-                
-                <div id="droite">
-                    <h2 id="decouvrir">À découvrir</h2>
-                    <img style="margin-left:0px" src="IMGS/home_decouvrir.jpg" width="160" height="90" />
-                    <ul>
-                        <li>L'île et son histoire</li>
-                        <li>La Citadelle du Château</li>
-                        <li>Le phare de Chassiron</li>
-                        <li>Le Fort Boyard</li>
-                    </ul>
-                    <p><a href="decouvrir.html"><div class="enSavoirPlus">Découvrez Oléron</div></a></p>
-                    <p><img style="margin-left:25px;margin-top:25px;" src="IMGS/WIFI_home.jpg" alt="" /></p>
-                </div>
-                {% endblock %}
+{% block content %}
+    <script type="text/javascript">
+        var file, i;
+        for(i=1 ; i <= 39 ; i++) {
+            if(i < 10) {
+                file = '0'+i;
+            } else {
+                file = i;
+            }
+            $('#visuel > div').append('<img src="IMGS/home/'+file+'.jpg" height="324" alt="" />');
+        }
+        $('#visuel > div').cycle();
+    </script>
+
+    <div id="central">
+        <div id="gauche">
+            <h2 id="infosPratiques">Infos Pratiques</h2>
+            <p>
+                <strong>Pour venir aux Cariatides</strong><br />
+                + En voiture<br />
+                + Depuis le nord<br />
+                + Depuis le sud<br />
+                + En train : TGV réservation
+            </p>
+            <div class="sepGauche"></div>
+            <h2 id="coordonnees">Coordonnées</h2>
+            <p>
+                <strong>Frédérique et Antoine Neri</strong><br />
+                Route Touristique<br />
+                La Biroire<br />
+                17310 St Pierre d'Oléron<br />
+                <br />
+                <strong>Tél. : 05 46 47 21 41</strong>
+                <br />
+                <br />
+            </p>
+            <p><div class="fb-like" data-href="http://www.les-cariatides.com" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div></p>
+        </div>
+        <div id="contenu">
+            <h2 id="bienvenue">Bienvenue sur notre site web</h2>
+            <p class="chapo">L’hébergement dans un autre esprit</p>
+            <p>Résidence de charme avec accès direct à la mer, sans même avoir à traverser de route, les Cariatides, creusées dans la dune, vous offrent un espace entièrement dédié au bien-être et à la nature. Chez nous, point de béton ! Seulement des arbres, des herbes et des fleurs…</p>
+            <p>&nbsp;</p>
+            <p>Les hébergements s'organisent autour des lieux de vie : le parc de 2 hectares parfaitement entretenu, la piscine de 12m par 6m, le mini-golf, le court de tennis, la barbecue et le jardin pour chaque maison.</p>
+            <p>&nbsp;</p>
+            <p>Depuis l’origine, nous nous sommes attachés à privilégier la qualité de l'accueil et à afficher les valeurs qui nous tiennent à coeur : respect, écoute, disponibilité, honnêteté et discrétion.</p>
+            <p>&nbsp;</p>
+            <p>Nous vous proposons une nouvelle approche de l’hébergement et du tourisme : hors des standards, nous mettons un point d’honneur à vous offrir un accueil stylé, chaleureux, simple, précis sans prétention ni ostentation.</p>
+            <p>&nbsp;</p>
+            <p>Le plus !<br />
+                Un accès WiFi entièrement gratuit !</p>
+            <p>&nbsp;</p>
+            <p>Alors, venez-vous ressourcer dans ce havre de paix et de tranquillité au sein de l'île d'Oléron !<a href="/visite-guidee"></a></p>
+            <a href="/visite"><div class="enSavoirPlus">Visitez nos logements</div></a></p>
+        </div>
+
+        <div id="droite">
+            <h2 id="decouvrir">À découvrir</h2>
+            <img style="margin-left:0px" src="/assets/img/home_decouvrir.jpg" width="160" height="90" />
+            <ul>
+                <li>L'île et son histoire</li>
+                <li>La Citadelle du Château</li>
+                <li>Le phare de Chassiron</li>
+                <li>Le Fort Boyard</li>
+            </ul>
+            <p><a href="/decouvrir"><div class="enSavoirPlus">Découvrez Oléron</div></a></p>
+
+            <p><img style="margin-left:25px;margin-top:25px;" src="/assets/img/WIFI_home.jpg" alt="" /></p>
+        </div>
+    </div>
+    <div class="sep"></div>
+{% endblock %}
+
+{% block extracontent %}
+    <hr style="background=#e0f2f4" />
+
+
+{% endblock %}

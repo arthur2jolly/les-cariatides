@@ -1,0 +1,16 @@
+SetEnv REGISTER_GLOBALS 0
+SetEnv ZEND_OPTIMIZER 1
+SetEnv MAGIC_QUOTES 1
+SetEnv PHP_VER 5
+
+RewriteEngine On 
+
+  RewriteRule ^assets/css/* - [L]
+  RewriteRule ^assets/img/* - [L]
+  RewriteRule ^assets/js/* - [L]
+  RewriteRule ^uploads/* - [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index\.php [L]

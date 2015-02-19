@@ -1,0 +1,18 @@
+{
+    "name": "oleron/les-cariatides.com",
+    "description": "Site internet de la résidence 'les cariatides'",
+    "require": {
+        "twig/twig": "~1.18",
+        "twig/extensions": "~1.2",
+        "gregwar/image": "~2.0",
+        "swiftmailer/swiftmailer": "~5.3",
+        "slim/slim": "~2.5"
+    },
+    "authors": [
+        {
+            "name": "Arthur Jolly",
+            "email": "jolly.interactive@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

@@ -1,0 +1,9 @@
+{
+    "accueil": ["01.jpg", "02.jpg", "03.jpg", "04.jpg"],
+    "visiteguidee": ["01.jpg", "02.jpg", "03.jpg", "04.jpg"],
+    "decouvrir": ["01.jpg", "02.jpg", "03.jpg", "04.jpg"],
+    "tarifs": ["01.jpg", "02.jpg", "03.jpg", "04.jpg"],
+    "liens": ["01.jpg", "02.jpg", "03.jpg", "04.jpg"],
+    "contact": ["01.jpg", "02.jpg", "03.jpg", "04.jpg"],
+    "default": ["01.jpg", "02.jpg", "03.jpg", "04.jpg"]
+}

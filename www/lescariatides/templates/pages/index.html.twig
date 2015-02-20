@@ -1,21 +1,12 @@
 {% extends 'layout.html.twig' %}
 
-{% block visual %}<div></div>{% endblock %}
+{% block visual %}
+    <div class="home">
+        {{ 'home'|diaporama|raw }}
+    </div>
+{% endblock %}
 
 {% block content %}
-    <script type="text/javascript">
-        var file, i;
-        for(i=1 ; i <= 39 ; i++) {
-            if(i < 10) {
-                file = '0'+i;
-            } else {
-                file = i;
-            }
-            $('#visuel > div').append('<img src="IMGS/home/'+file+'.jpg" height="324" alt="" />');
-        }
-        $('#visuel > div').cycle();
-    </script>
-
     <div id="central">
         <div id="gauche">
             <h2 id="infosPratiques">Infos Pratiques</h2>

@@ -4,14 +4,9 @@
 
 
 {% block visual %}
-    <ul class="diaporama1">
-        <li><img src="IMGS/home/10.jpg" alt="" /></li>
-        <li><img src="IMGS/home/11.jpg" alt="" /></li>
-        <li><img src="IMGS/home/12.jpg" alt="" /></li>
-        <li><img src="IMGS/home/13.jpg" alt="" /></li>
-        <li><img src="IMGS/home/14.jpg" alt="" /></li>
-        <li><img src="IMGS/home/15.jpg" alt="" /></li>
-    </ul>
+    <div class="inside">
+        {{ 'inside'|diaporama|raw }}
+    </div>
 {% endblock %}
 
 {% block content %}

@@ -57,6 +57,15 @@ h1
 	border-bottom:#dee1c9 1px solid;
 }
 
+#visuel .home {
+    height: 324px;
+}
+
+#visuel .inside {
+    height: 174px;
+    overflow: hidden;
+}
+
 #menu
 {
 	margin-left:13px;

@@ -190,12 +190,16 @@ li
 
 #footer
 {
-	font-size:9px;
-	text-align:center;
-	color:#2ea6ba;
-	margin-top:25px;
-	margin-bottom:5px;
-	text-transform: uppercase;
+    background-color: #fff;
+    color: #2ea6ba;
+    font-size: 9px;
+    margin-bottom: 5px;
+    margin-left: 45px;
+    margin-top: -2px;
+    padding: 25px 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 710px;
 }
 
 #footer a
@@ -444,8 +448,12 @@ padding-top:10px;
 
 #tableauTarifs
 {
-	/*border:1px solid #5e8175;*/
-	margin-bottom:25px;
+    margin-bottom: 2px;
+}
+
+#tableauTarifs table
+{
+    margin: auto;
 }
 
 #contenu_tarifs p

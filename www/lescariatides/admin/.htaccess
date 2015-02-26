@@ -5,9 +5,8 @@ SetEnv PHP_VER 5_3
 SetEnv BLOQ 1
 
 
-Header set Cache-Control "max-age=29030400, public"
 
-RewriteEngine On 
+RewriteEngine On
 
 RewriteRule ^assets/css/* - [L]
 RewriteRule ^assets/img/* - [L]
@@ -18,3 +17,8 @@ RewriteRule ^uploads/* - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index\.php [L]
+
+AuthType Basic
+AuthName "Password Protected Area"
+AuthUserFile ../../.htpasswd
+Require valid-user
